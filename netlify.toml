@@ -3,10 +3,24 @@
     functions = "src/functions"
     publish = "src/static"
 
+[build.environment]
+    PYTHON_VERSION = "3.9"
+
 [[redirects]]
     from = "/api/*"
     to = "/.netlify/functions/api/:splat"
     status = 200
 
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
+
 [functions]
     directory = "src/functions"
+
+[context.production]
+    environment = { NODE_ENV = "production" }
+
+[context.deploy-preview]
+    environment = { NODE_ENV = "preview" }
