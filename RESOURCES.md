@@ -8,3 +8,8 @@ Key resources for this project by category
 * Notion API Script
 * Image/PDF to CSV
 * Notion API Request Structure
+* [Artifacts Directory](https://artifacts.directory)
+
+## Helpful Links
+
+* [Netlify App](https://app.netlify.com/sites/glistening-twilight-013cec/deploys/66ea96bb05a7bd0008abff9f)
